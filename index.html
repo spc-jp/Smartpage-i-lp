@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smartpage I - 話しかけるだけで、ホームページが変わる。</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a2d5a'/><text x='16' y='23' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='20' fill='%23c49a00'>S</text></svg>">
@@ -16,6 +17,7 @@
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+    #features { scroll-margin-top: 72px; }
     body {
       font-family: 'Noto Sans JP', sans-serif;
       color: #1e293b;
@@ -494,7 +496,7 @@
     <div class="nav-logo-mark">S</div>
     <div class="nav-logo-text">Smartpage <span>I</span></div>
   </div>
-  <a href="#cta" class="nav-cta">
+  <a href="https://smartpage-i.pages.dev/" target="_blank" class="nav-cta">
     <i class="fas fa-rocket"></i>無料で試してみる
   </a>
 </nav>
@@ -519,12 +521,12 @@
         ITの知識は、一切不要です。
       </p>
       <div class="hero-btns">
-        <a href="#cta" class="btn-primary">
+        <a href="https://smartpage-i.pages.dev/" target="_blank" class="btn-primary">
           <i class="fas fa-play"></i>無料で試してみる
         </a>
-        <a href="#features" class="btn-secondary">
+        <button class="btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth',block:'start'});return false;">
           <i class="fas fa-info-circle"></i>機能を見る
-        </a>
+        </button>
       </div>
     </div>
 
@@ -543,7 +545,7 @@
           </div>
           <div class="mockup-hero-area">
             <div class="mockup-highlight" style="display:inline-block;padding:8px 12px;margin-bottom:8px">
-              <div class="mockup-edit-badge">✏️ 編集中</div>
+              <div class="mockup-edit-badge">&#9999;&#65039; 編集中</div>
               <div class="mockup-hero-text">精密加工の技術で、<br>ものづくりの未来を支える。</div>
             </div>
             <div class="mockup-hero-sub">ISO9001取得 ／ 取引先200社</div>
@@ -553,13 +555,13 @@
             <div style="font-size:10px;font-weight:700;color:#1a2d5a;margin-bottom:8px">私たちの強み</div>
             <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
               <div style="background:white;border-radius:8px;padding:8px;text-align:center;font-size:9px;color:#64748b;border:1px solid #e2e8f0">
-                <div style="font-size:14px;margin-bottom:3px">⚙️</div>精密加工
+                <div style="font-size:14px;margin-bottom:3px">&#9881;&#65039;</div>精密加工
               </div>
               <div style="background:white;border-radius:8px;padding:8px;text-align:center;font-size:9px;color:#64748b;border:1px solid #e2e8f0">
-                <div style="font-size:14px;margin-bottom:3px">⚡</div>短納期
+                <div style="font-size:14px;margin-bottom:3px">&#9889;</div>短納期
               </div>
               <div style="background:white;border-radius:8px;padding:8px;text-align:center;font-size:9px;color:#64748b;border:1px solid #e2e8f0">
-                <div style="font-size:14px;margin-bottom:3px">🤝</div>一貫生産
+                <div style="font-size:14px;margin-bottom:3px">&#129309;</div>一貫生産
               </div>
             </div>
           </div>
@@ -570,7 +572,7 @@
           <div class="chat-float-icon">I</div>
           <div class="chat-float-name">アイより</div>
         </div>
-        キャッチコピーですね🎯<br>御社の一番の強みを一言で教えてください！
+        キャッチコピーですね&#127919;<br>御社の一番の強みを一言で教えてください！
       </div>
     </div>
   </div>
@@ -609,7 +611,7 @@
       <div class="problem-card fade-up">
         <div class="problem-icon"><i class="fas fa-yen-sign"></i></div>
         <div class="problem-title">「更新のたびに業者に頼んでいる」</div>
-        <div class="problem-desc">修正のたびに費用と時間がかかり、気づけば情報が古いまま…という状況になっていませんか？</div>
+        <div class="problem-desc">修正のたびに費用と時間がかかり、気づけば情報が古いまま&hellip;という状況になっていませんか？</div>
         <div class="problem-arrow"><i class="fas fa-arrow-right"></i>自分でクリックするだけで即更新</div>
       </div>
       <div class="problem-card fade-up">
@@ -670,29 +672,29 @@
           <div style="display:flex;gap:10px;align-items:stretch">
             <!-- ミニサイドバー -->
             <div style="background:white;border-radius:10px;padding:10px;width:100px;border:1px solid #e2e8f0;font-size:9px;">
-              <div style="color:#92400e;font-weight:700;background:#fffbeb;padding:5px 8px;border-radius:6px;border-right:2px solid #c49a00;margin-bottom:4px">⭐ 強み・特長</div>
-              <div style="color:#94a3b8;padding:4px 8px">📄 ヘッダー</div>
-              <div style="color:#94a3b8;padding:4px 8px">🖼️ ヒーロー</div>
-              <div style="color:#94a3b8;padding:4px 8px">📊 実績数字</div>
-              <div style="color:#94a3b8;padding:4px 8px">📩 お問合せ</div>
+              <div style="color:#92400e;font-weight:700;background:#fffbeb;padding:5px 8px;border-radius:6px;border-right:2px solid #c49a00;margin-bottom:4px">&#11088; 強み・特長</div>
+              <div style="color:#94a3b8;padding:4px 8px">&#128196; ヘッダー</div>
+              <div style="color:#94a3b8;padding:4px 8px">&#128444;&#65039; ヒーロー</div>
+              <div style="color:#94a3b8;padding:4px 8px">&#128202; 実績数字</div>
+              <div style="color:#94a3b8;padding:4px 8px">&#128233; お問合せ</div>
             </div>
             <!-- ミニキャンバス -->
             <div style="flex:1;background:white;border-radius:10px;border:2px solid #2563eb;overflow:hidden;position:relative">
               <div style="background:#f8fafc;padding:6px 10px;font-size:8px;color:#1a2d5a;font-weight:700;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:4px">
-                <span style="background:#2563eb;color:white;padding:1px 5px;border-radius:3px;font-size:7px">✏️ 強み編集中</span>
+                <span style="background:#2563eb;color:white;padding:1px 5px;border-radius:3px;font-size:7px">&#9999;&#65039; 強み編集中</span>
               </div>
               <div style="padding:10px">
                 <div style="font-size:9px;font-weight:700;color:#1a2d5a;margin-bottom:6px">私たちの強み</div>
                 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px">
-                  <div style="background:#eff6ff;border-radius:6px;padding:6px;text-align:center;font-size:8px">⚙️精密加工</div>
-                  <div style="background:#eff6ff;border-radius:6px;padding:6px;text-align:center;font-size:8px">⚡短納期</div>
-                  <div style="background:#eff6ff;border-radius:6px;padding:6px;text-align:center;font-size:8px">🤝一貫対応</div>
+                  <div style="background:#eff6ff;border-radius:6px;padding:6px;text-align:center;font-size:8px">&#9881;&#65039;精密加工</div>
+                  <div style="background:#eff6ff;border-radius:6px;padding:6px;text-align:center;font-size:8px">&#9889;短納期</div>
+                  <div style="background:#eff6ff;border-radius:6px;padding:6px;text-align:center;font-size:8px">&#129309;一貫対応</div>
                 </div>
               </div>
             </div>
           </div>
           <div style="margin-top:10px;background:white;border-radius:10px;padding:10px;border:1px solid #e2e8f0;font-size:10px;color:#1e293b">
-            <span style="font-weight:700;color:#92400e">アイ：</span> 強みのセクションですね⭐ お客様によく褒められることは何ですか？
+            <span style="font-weight:700;color:#92400e">アイ：</span> 強みのセクションですね&#11088; お客様によく褒められることは何ですか？
           </div>
         </div>
       </div>
@@ -713,10 +715,10 @@
         <div class="feature-visual">
           <div class="chat-demo">
             <div class="chat-bubble user">キャッチコピーを作って</div>
-            <div class="chat-bubble ai">了解です！御社の一番の強みを一言で教えてください😊</div>
+            <div class="chat-bubble ai">了解です！御社の一番の強みを一言で教えてください&#128522;</div>
             <div class="chat-bubble user">40年の精密加工です</div>
             <div class="chat-bubble ai">
-              できました！✨<br>
+              できました！&#10024;<br>
               <strong>「40年の技が、0.01mmの信頼をつくる。」</strong>
             </div>
             <div class="apply-demo-btn">
@@ -740,16 +742,16 @@
         </div>
         <div class="feature-visual">
           <div class="industry-demo">
-            <div class="ind-card sel"><span class="emoji">🏭</span><span class="label">製造業</span></div>
-            <div class="ind-card"><span class="emoji">🍽️</span><span class="label">飲食</span></div>
-            <div class="ind-card"><span class="emoji">💄</span><span class="label">美容</span></div>
-            <div class="ind-card"><span class="emoji">📊</span><span class="label">税理士</span></div>
-            <div class="ind-card"><span class="emoji">🏠</span><span class="label">工務店</span></div>
-            <div class="ind-card"><span class="emoji">💻</span><span class="label">IT</span></div>
+            <div class="ind-card sel"><span class="emoji">&#127981;</span><span class="label">製造業</span></div>
+            <div class="ind-card"><span class="emoji">&#127869;&#65039;</span><span class="label">飲食</span></div>
+            <div class="ind-card"><span class="emoji">&#128132;</span><span class="label">美容</span></div>
+            <div class="ind-card"><span class="emoji">&#128202;</span><span class="label">税理士</span></div>
+            <div class="ind-card"><span class="emoji">&#127968;</span><span class="label">工務店</span></div>
+            <div class="ind-card"><span class="emoji">&#128187;</span><span class="label">IT</span></div>
           </div>
           <div style="margin-top:12px;background:white;border-radius:10px;padding:10px;border:1px solid #e2e8f0;text-align:center">
             <div style="font-size:9px;color:#94a3b8;margin-bottom:4px">選んだ瞬間に切り替わります</div>
-            <div style="font-size:11px;font-weight:700;color:#1a2d5a">🏭 製造業のサンプルをセット済み</div>
+            <div style="font-size:11px;font-weight:700;color:#1a2d5a">&#127981; 製造業のサンプルをセット済み</div>
           </div>
         </div>
       </div>
@@ -811,32 +813,32 @@
 
     <div class="target-grid">
       <div class="target-card fade-up">
-        <span class="target-emoji">🏭</span>
+        <span class="target-emoji">&#127981;</span>
         <div class="target-title">製造業の経営者・担当者</div>
         <div class="target-desc">技術力はあるのにホームページに反映できていない。BtoB受注・採用・取引先連携を強化したい方。</div>
       </div>
       <div class="target-card fade-up">
-        <span class="target-emoji">🍽️</span>
+        <span class="target-emoji">&#127869;&#65039;</span>
         <div class="target-title">飲食・美容・サービス業</div>
         <div class="target-desc">SNS発信はできているのに、ホームページの更新は後回しになっている店舗オーナーの方。</div>
       </div>
       <div class="target-card fade-up">
-        <span class="target-emoji">📊</span>
+        <span class="target-emoji">&#128202;</span>
         <div class="target-title">税理士・士業事務所</div>
         <div class="target-desc">顧問先の信頼を高めるWebを整えたい。新規顧客へのアプローチを強化したい先生方。</div>
       </div>
       <div class="target-card fade-up">
-        <span class="target-emoji">🏠</span>
+        <span class="target-emoji">&#127968;</span>
         <div class="target-title">建設・工務店</div>
         <div class="target-desc">施工事例の更新が追いつかない。地域での認知を高めて新規客を増やしたい事業者の方。</div>
       </div>
       <div class="target-card fade-up">
-        <span class="target-emoji">👤</span>
+        <span class="target-emoji">&#128100;</span>
         <div class="target-title">ITが苦手な経営者全般</div>
         <div class="target-desc">「ホームページは作ったけど触れない」という方。クリックと会話だけで完結します。</div>
       </div>
       <div class="target-card fade-up">
-        <span class="target-emoji">🤝</span>
+        <span class="target-emoji">&#129309;</span>
         <div class="target-title">パートナー・コンサルタント</div>
         <div class="target-desc">クライアントにSmartpage Iを導入・支援したいWeb制作者・コンサルタントの方。</div>
       </div>
@@ -869,7 +871,7 @@
       「自分でもできた」の感動が、きっとあります。
     </p>
     <div class="cta-btns">
-      <a href="https://spc-jp.github.io/Smartpage-i/" target="_blank" class="btn-primary" style="font-size:16px;padding:16px 36px">
+      <a href="https://smartpage-i.pages.dev/" target="_blank" class="btn-primary" style="font-size:16px;padding:16px 36px">
         <i class="fas fa-rocket"></i>Smartpage I を試してみる
       </a>
     </div>
@@ -887,7 +889,7 @@
     <div class="footer-logo-text">Smartpage I</div>
   </div>
   <div class="footer-supervision">監修：前田経営研究所</div>
-  <div class="footer-copy">© 2025 Smile Plus Consulting. All rights reserved.</div>
+  <div class="footer-copy">© 2025 Maeda MRI</div>
 </footer>
 
 <script>
